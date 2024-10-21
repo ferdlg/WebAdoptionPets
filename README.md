@@ -6,8 +6,8 @@
   <h3>🪄Tecnologias de Desarrollo</h3>
   <ol>
     <li>React + Vite</li>
-    <li>React + Vite</li>
-    <li>React + Vite</li>
+    <li>Implementación de Redux</li>
+    <li>Canva</li>
     <li>React + Vite</li>
   </ol>
   <h3>Hecha un vistazo! 👀</h3>
