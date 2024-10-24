@@ -1,4 +1,5 @@
-import Dogs from './components/dogs/dogs'
+import Dogs from './components/dogs/dogs';
+import Cats from './components/cats/cats';
 import './App.css'
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <>
       <h1>Hola mundo</h1>
       <Dogs></Dogs>
+      <Cats></Cats>
     </>
   )
 }

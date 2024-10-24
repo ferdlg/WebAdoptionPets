@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { DogService } from "../../services/dog/dogService";
 import { useSelector, useDispatch } from "react-redux";
-import { setDog, setDogs } from "../../redux/Slices/dogSlice";
+import { setDogById, setDogs } from "../../redux/Slices/dogSlice";
 
 
 const Dogs = ()=>{

@@ -26,5 +26,5 @@ export const dogSlice = createSlice({
     },
 });
 
-export const {setDog, setDogs, addToAdopted} = dogSlice.actions;
+export const {setDogById, setDogs, addToAdopted} = dogSlice.actions;
 export default dogSlice.reducer;
