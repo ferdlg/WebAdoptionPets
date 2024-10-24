@@ -1,42 +1,172 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* 
+General Body and Layout:
+- Define el diseño general de la página, asegurando un fondo limpio y márgenes básicos para todo el contenido.
+- La fuente es Arial para garantizar una tipografía moderna y clara.
+*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* 
+Header:
+- El encabezado incluye el menú de navegación con un estilo centrado.
+- El color de fondo es blanco para que resalte el contenido del menú.
+- Usa sombra para darle una ligera elevación visual al header.
+*/
+header {
+    background-color: #fff;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* 
+Header Navigation:
+- Los enlaces del menú están distribuidos uniformemente usando flexbox.
+- El color marrón claro (#6f4d20) es para reflejar el diseño cálido y amigable del sitio de adopción.
+*/
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
-.card {
-  padding: 2em;
+header nav a {
+    color: #6f4d20;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
 }
 
-.read-the-docs {
-  color: #888;
+/* 
+Hero Section:
+- El área principal con una imagen grande de fondo (perro en la imagen original).
+- El texto se centra y se coloca sobre la imagen de fondo, con un tamaño de fuente considerable para resaltar el mensaje.
+*/
+.hero {
+    background-image: url('dog-hero.jpg'); /* Reemplaza con la imagen adecuada */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+    padding: 100px 20px;
+    position: relative;
+}
+
+/* 
+Hero Text Styles:
+- Estilo para el título grande y el llamado a la acción (CTA).
+- La fuente es grande para captar la atención del usuario.
+*/
+.hero h1 {
+    font-size: 60px;
+    margin: 0;
+    color: #4f2b15;
+}
+
+.hero .cta {
+    font-size: 30px;
+    margin-top: 10px;
+    color: #6f4d20;
+}
+
+/* 
+Adoptable Animals Section:
+- Sección donde se muestran los animales disponibles para adopción.
+- Fondo de color naranja cálido y un diseño centrado.
+*/
+.animals {
+    background-color: #ffbb43;
+    padding: 50px 0;
+    text-align: center;
+}
+
+/* 
+Animal Cards Container:
+- Flexbox para crear una cuadrícula de tarjetas de animales, permitiendo flexibilidad en el diseño.
+- Cada tarjeta se separa con un espacio uniforme.
+*/
+.animal-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* 
+Animal Card:
+- Tarjeta individual de cada animal con borde redondeado y sombra para resaltarla.
+- La tarjeta se agranda ligeramente al pasar el cursor (hover).
+*/
+.animal-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.animal-card:hover {
+    transform: scale(1.05);
+}
+
+/* 
+Animal Image:
+- Las imágenes de los animales son redondeadas para un estilo amigable.
+- El tamaño es fijo para mantener consistencia visual.
+*/
+.animal-card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* 
+Animal Name:
+- Estilo de los nombres de los animales para que sean visibles y claros.
+*/
+.animal-card h3 {
+    margin: 15px 0 5px;
+    font-size: 20px;
+    color: #333;
+}
+
+/* 
+Adopt Button:
+- Botón de adopción que es minimalista y tiene un efecto hover para mejorar la interacción del usuario.
+- Cambia de color cuando el usuario pasa el cursor sobre él.
+*/
+.adopt-btn {
+    background-color: #fff;
+    color: #6f4d20;
+    padding: 10px 15px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 2px solid #6f4d20;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.adopt-btn:hover {
+    background-color: #6f4d20;
+    color: #fff;
+}
+
+/* 
+Footer:
+- Pie de página oscuro para mantener un contraste con el resto de la página.
+- Estilo minimalista y centrado.
+*/
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
 }
