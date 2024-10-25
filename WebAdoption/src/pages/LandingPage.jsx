@@ -1,11 +1,10 @@
 import React from 'react';
-import perro from '../assets/images/perro.webp';
-import raqui from '../assets/images/raqui.jpg';
-import raflex from '../assets/images/raflex.jpg';
-import felix from '../assets/images/felix.jpg';
-import bella from '../assets/images/bella.jpg';
-import '../styles/landingPage.css';
-
+import perro from '../assets/imagenes/perro.webp';
+import raqui from '../assets/imagenes/raqui.jpg';
+import raflex from '../assets/imagenes/raflex.jpg';
+import felix from '../assets/imagenes/felix.jpg';
+import bella from '../assets/imagenes/bella.jpg';
+import '../assets/styles/landingpage.css';
 const LandingPage = () => {
   return (
     <div className="landing-container">
