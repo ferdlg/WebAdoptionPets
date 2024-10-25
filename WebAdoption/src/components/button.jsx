@@ -1,5 +1,5 @@
 
-import './Button.css';  
+import '../assets/styles/components/button.css';  
 
 const Button = ({ label, onClick }) => {
   return (

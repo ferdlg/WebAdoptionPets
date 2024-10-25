@@ -1,5 +1,4 @@
-
-
+import "../assets/styles/components/card.css"
 
 const Card = ({ title, description, imageUrl, buttonLabel, onClick }) => {
   return (
