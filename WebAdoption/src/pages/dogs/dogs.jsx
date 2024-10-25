@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { DogService } from "../../services/dog/dogService";
 import { useSelector, useDispatch } from "react-redux";
 import { setDogById, setDogs } from "../../redux/Slices/dogSlice";
+import Card from "../../components/card";
 
 
 const Dogs = ()=>{
@@ -27,7 +28,9 @@ const Dogs = ()=>{
         <>
         <div>
             {dogs.map(dog =>(
-            <img key={dog.id} src={dog.url} />
+                <Card
+                key={dog.id}
+                imageUrl={dog.url}/>
             ))}
         </div>
         </>

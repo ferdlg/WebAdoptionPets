@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { CatService } from "../../services/cat/catService";
 import { useSelector, useDispatch } from "react-redux";
 import { setCatById, setCats } from "../../redux/Slices/catSlice";
+import Card from "../../components/card";
 
 
 const Cats = ()=>{
@@ -27,7 +28,10 @@ const Cats = ()=>{
         <>
         <div>
             {cats.map(cat =>(
-            <img key={cat.id} src={cat.url} />
+                <Card
+                key={cat.id}
+                imageUrl={cat.url}
+                />
             ))}
         </div>
         </>
