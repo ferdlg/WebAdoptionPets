@@ -1,0 +1,48 @@
+.landing-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .landing-header h1 {
+    font-size: 3rem;
+    color: #4a4a4a;
+  }
+  
+  .featured-animal {
+    margin: 20px 0;
+  }
+  
+  .featured-img {
+    width: 80%;
+    max-width: 600px;
+    border-radius: 15px;
+  }
+  
+  .adoptable-animals {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .animal-card {
+    background-color: #ffe0b2;
+    border-radius: 10px;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+  }
+  
+  .animal-img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .animal-card p {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
