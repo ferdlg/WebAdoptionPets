@@ -1,5 +1,5 @@
-import Dogs from './components/dogs/dogs';
-import Cats from './components/cats/cats';
+import Dogs from './pages/dogs/dogs';
+import Cats from './pages/cats/cats';
 import './App.css'
 
 function App() {
@@ -13,4 +13,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
