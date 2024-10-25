@@ -1,5 +1,6 @@
 /* components/Button.css */
 .button {
+  font-style: italic;
     padding: 10px 20px;
     background-color: #f4e746;
     color: #fff;
@@ -12,4 +13,5 @@
   .button:hover {
     background-color: #f4e746;
   }
+
   

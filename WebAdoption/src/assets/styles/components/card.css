@@ -7,6 +7,7 @@
   }
   
   .card {
+    font-style: italic;
     border: 1px solid #f4e746;
     border-radius: 8px;
     overflow: hidden;
@@ -35,12 +36,14 @@
   }
   
   .card-description {
+    font-style: italic;
     font-size: 1em;
     color: #4ed9a9;
     margin-bottom: 16px;
   }
   
   .card-button {
+    font-style: italic;
     background-color: #f4e746;
     color: #f4e746(14, 98, 181);
     border: none;

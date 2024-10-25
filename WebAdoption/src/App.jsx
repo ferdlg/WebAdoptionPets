@@ -4,10 +4,7 @@ import Modal from './components/modal'
 
 
 function App() {
-  const handleEvent = ()=>{
-    alert("click")
-  }
-
+ 
   return (
     <>
     <div>
@@ -15,10 +12,9 @@ function App() {
         title="Tarjeta de adopcion a mascota"
         description=""
         imageUrl=""
-        buttonLabel="CLICK"
-        onClick={handleEvent}
+        buttonLabel="Descripcion mascota"
+        onClick={Modal}
       />
-      <Modal></Modal>
     </div>
     </>
   )

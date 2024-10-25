@@ -1,11 +1,31 @@
-.containt__modal{
-    border-radius: 25px;
-    padding: 1rem;
-    background-color: yellowgreen;
-}
-.containt__modal-pet-name{
 
-}
-.containt__modal-pet-info{
-
-}
+.modal-overlay {
+    font-style: italic;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:#f4e746(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .containt__modal {
+    background-color:#e6e195;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    max-width: 90%;
+  }
+  
+  .close-modal {
+    background:#e0d53e;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
