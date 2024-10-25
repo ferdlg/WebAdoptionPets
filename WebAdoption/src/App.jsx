@@ -1,6 +1,6 @@
 import React from "react";
 import LandingPage from "./pages/LandingPage";
-import './App.css'; // Importar el CSS global
+import './assets/styles/base/_app.css';
 
 function App() {
   return (
