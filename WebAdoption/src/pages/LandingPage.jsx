@@ -1,19 +1,27 @@
 import React from 'react';
-import perro from '../assets/imagenes/perro.webp';
+import { Link } from 'react-router-dom';
+import animals from "../assets/imagenes/aipg.webp";
 import raqui from '../assets/imagenes/raqui.jpg';
 import raflex from '../assets/imagenes/raflex.jpg';
 import felix from '../assets/imagenes/felix.jpg';
 import bella from '../assets/imagenes/bella.jpg';
 import '../assets/styles/pages/_landingpage.css';
+
 const LandingPage = () => {
   return (
     <div className="landing-container">
       <header className="landing-header">
-        <h1>No compres, adopta.</h1>
+        <nav>
+          <ul>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/how-to-adopt">¿Cómo Adoptar?</Link></li>
+            <li><a href="#dogs">Perros</a></li>
+            <li><a href="#cats">Gatos</a></li>
+          </ul>
+        </nav>
       </header>
-
-      <section className="featured-animal">
-        <img src={perro} alt="Perro principal" className="featured-img" />
+      <section className="full-width-featured">
+        <img src={animals} alt="principal" className="full-width-featured img" />
         <h2>Adoptame</h2>
       </section>
 

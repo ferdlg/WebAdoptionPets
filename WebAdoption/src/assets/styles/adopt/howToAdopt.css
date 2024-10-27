@@ -1,0 +1,69 @@
+.how-to-adopt-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #FFEB3B; /* Fondo amarillo */
+    min-height: 100vh;
+  }
+  
+  .title {
+    color: #6D4C41;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .steps-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1000px;
+  }
+  
+  .step-card {
+    background-color: #FFF8E1;
+    border-radius: 80px;
+    padding: 65px;
+    text-align: center;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+  }
+  
+  .step-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .icon-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  
+  .step-text {
+    color: #6D4C41;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+  }
+  
+  .toggle-button {
+    background-color: #e7d008;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+  }
+  
+  .toggle-button:hover {
+    background-color: #d9e80e;
+  }
+  
+  .toggle-button.completed {
+    background-color: #950b7e; /* para pasos completados */
+  }
+  

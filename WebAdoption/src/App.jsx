@@ -1,12 +1,19 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import LandingPage from "./pages/LandingPage";
+import HowToAdopt from "./components/landingPage/howToAdopt/howToAdopt.jsx";
 import './assets/styles/base/_app.css';
 
 function App() {
   return (
-    <div className="App">
-      <LandingPage />
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/how-to-adopt" element={<HowToAdopt />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
