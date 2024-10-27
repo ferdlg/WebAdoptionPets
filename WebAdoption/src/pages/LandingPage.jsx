@@ -1,9 +1,8 @@
 import React from 'react';
-import perro from '../assets/imagenes/perro.webp';
-import raqui from '../assets/imagenes/raqui.jpg';
-import raflex from '../assets/imagenes/raflex.jpg';
-import felix from '../assets/imagenes/felix.jpg';
-import bella from '../assets/imagenes/bella.jpg';
+import raqui from '../assets/images/raqui.jpg';
+import raflex from '../assets/images/raflex.jpg';
+import felix from '../assets/images/felix.jpg';
+import bella from '../assets/images/bella.jpg';
 import '../assets/styles/pages/_landingpage.css';
 const LandingPage = () => {
   return (
@@ -12,10 +11,7 @@ const LandingPage = () => {
         <h1>No compres, adopta.</h1>
       </header>
 
-      <section className="featured-animal">
-        <img src={perro} alt="Perro principal" className="featured-img" />
-        <h2>Adoptame</h2>
-      </section>
+
 
       <section className="adoptable-animals">
         <div className="animal-card">
