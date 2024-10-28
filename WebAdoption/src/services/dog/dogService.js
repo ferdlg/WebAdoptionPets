@@ -6,7 +6,7 @@ export class DogService {
     async getDogs(){
         try{
             const apiKey = import.meta.env.VITE_DOG_API_KEY;
-            const request = await fetch(`${this.baseUrl}search?limit=10`,{method:'GET', headers:{
+            const request = await fetch(`${this.baseUrl}?limit=10`,{method:'GET', headers:{
                 'x-api-key': apiKey,
             },
         });

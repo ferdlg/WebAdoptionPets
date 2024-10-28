@@ -4,7 +4,6 @@ import { useSelector, useDispatch } from "react-redux";
 import { setDogById, setDogs } from "../../redux/Slices/dogSlice";
 import Card from "../../components/card";
 
-
 const Dogs = ()=>{
 
     const dispatch = useDispatch();
@@ -17,7 +16,7 @@ const Dogs = ()=>{
                 const data = await dogService.getDogs();
                 dispatch(setDogs(data));
             }catch(e){
-                throw new Error('Error fetching dogs:', e);
+                console.error('Error fetching dogs:', e);
             }
         };
         fetchDogs();

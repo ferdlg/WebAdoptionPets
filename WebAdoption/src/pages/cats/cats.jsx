@@ -17,7 +17,7 @@ const Cats = ()=>{
                 const data = await catService.getCats();
                 dispatch(setCats(data));
             }catch(e){
-                throw new Error('Error fetching cats:', e);
+                console.error('Error fetching cats:', e);
             }
         };
         fetchCats();

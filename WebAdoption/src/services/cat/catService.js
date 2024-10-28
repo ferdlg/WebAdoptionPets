@@ -6,7 +6,7 @@ export class CatService{
     async getCats(){
         try{
             const apiKey = import.meta.env.VITE_CAT_API_KEY;
-            const request = await fetch(`${this.baseUrl}search?limit=10`,{
+            const request = await fetch(`${this.baseUrl}?limit=10`,{
                 method : 'GET', headers :{ 'x-api-key': apiKey},
             });
 
