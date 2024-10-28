@@ -3,7 +3,7 @@ import '../../../assets/styles/utils/_banner.css';
 
 const Banner = ({ imageUrl }) => {
   const bannerStyle = {
-    backgroundImage: imageUrl ? `url(${imageUrl})` : 'none', // Usa la imagen solo si `imageUrl` tiene un valor
+    backgroundImage: imageUrl ? `url(${imageUrl})` : 'none', 
   };
 
   return (
