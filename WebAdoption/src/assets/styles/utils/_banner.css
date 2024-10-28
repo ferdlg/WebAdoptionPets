@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;700&display=swap');
+
 .banner {
   display: flex;
   flex-direction: column;
@@ -8,30 +10,26 @@
   min-height: 500px; 
   min-width: 100% !important; 
 }
-
-.p-text{
-  color: rgb(82, 35, 35);
-  font-size: 80px;
-  font-weight: inherit;
-  text-align: right;
-  justify-content: right;
-}
-
-.div-text{
-  max-width: 60%;
+.banner__text {
+  font-family: "DynaPuff", system-ui;
+  max-width: 200%;
   text-align: left !important;
 }
-
+.banner__text-paragraph {
+  color: rgb(81, 39, 39);
+  font-size: 80px;
+  font-weight: initial;
+  text-align: left;
+  justify-content: left;
+}
 @media (max-width: 768px) {
-  .banner {
-    min-height: 350px; /* Ajusta la altura en pantallas más pequeñas */
+  .banner--mobile {
+    min-height: 350px; 
   }
-
-  .div-text{
+  .banner__text--mobile {
     max-width: 80% !important;
   }
-
-  .p-text{
+  .banner__text-paragraph--mobile {
     font-size: 35px !important;
   }
 }
