@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import LandingPage from "./pages/LandingPage";
-import HowToAdopt from "./components/landingPage/howToAdopt/howToAdopt.jsx";
+import HowToAdopt from './pages/howToAdopt.jsx';
 import './assets/styles/base/_app.css';
 
 function App() {

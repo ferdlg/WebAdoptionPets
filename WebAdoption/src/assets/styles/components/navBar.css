@@ -1,0 +1,24 @@
+.nav-bar {
+    background-color: #fff;
+    padding: 10px;
+  }
+  
+  .nav-bar__list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-bar__item {
+    
+  }
+  
+  .nav-bar__link {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .nav-bar__link:hover {
+    color: #ff5733;
+  }
+  

@@ -31,7 +31,7 @@
 
 .landing-header nav ul li a {
   text-decoration: none;
-  color: #fff;
+  color: #eee3e3;
   font-weight: bold;
   padding: 10px 20px;
   background-color: #6b4226;
@@ -59,7 +59,6 @@
   margin-top: 15px;
 }
 
-/* Sección de animales adoptables */
 .adoptable-animals {
   display: flex;
   justify-content: space-around;
@@ -78,6 +77,6 @@
 }
 
 .animal-card p {
-  color: #fff;
+  color: #d3c7c7;
   font-size: 1.2em;
 }
