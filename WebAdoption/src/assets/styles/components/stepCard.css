@@ -1,0 +1,37 @@
+.step-card {
+  display: flex;
+  align-items: center;
+  background-color: #d5c516;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 350px; 
+  position: relative;
+  transition: transform 0.3s ease;
+  transform: translateX(var(--offset, 0px));
+  margin: 0 auto; 
+}
+
+.step-card__number {
+  font-size: 8rem; 
+  font-weight: bold;
+  color: #000000;
+  opacity: 0.2;
+  position: absolute;
+  left: -70px; 
+}
+
+.step-card__image {
+  width: 100px; 
+  height: 100px; 
+  object-fit: cover; 
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.step-card__text {
+  font-size: 1.2rem;
+  text-align: left;
+  margin-left: 10px;
+  flex: 1;
+}
