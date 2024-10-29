@@ -3,26 +3,26 @@ import "../assets/styles/components/card.css";
 import Modal from "./modal";
 import Button from "./button";
 
-const Card = ({ title, description, imageUrl, buttonLabel }) => {
+const Card = ({ dataPet,onOpenModal }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleOpenModal = () => {
     setIsModalOpen(true);
+    onOpenModal();
   };
 
-  const handleCloseModal = () => {
+  const handleCloseModal = (data) => {
     setIsModalOpen(false);
   };
 
   return (
     <div className="card__container">
-      <img src={imageUrl} alt={title} className="card__image" />
+      <img src={dataPet.url} className="card__image" />
       <div className="card__content">
-        <h2 className="card__title">{title}</h2>
-        <p className="card__description">{description}</p>
-        <Button className="card__button" label={buttonLabel} onClick={handleOpenModal} />
+        <h2 className="card__title">{dataPet.name}</h2>
+        <Button className="card__button" onClick={handleOpenModal} />
       </div>
-      {isModalOpen && <Modal onClose={handleCloseModal} />}
+      {isModalOpen && <Modal onClose={handleCloseModal} dataPet={dataPet} />}
     </div>
   );
 };

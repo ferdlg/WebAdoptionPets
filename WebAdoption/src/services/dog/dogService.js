@@ -6,13 +6,12 @@ export class DogService {
     async getDogs(){
         try{
             const apiKey = import.meta.env.VITE_DOG_API_KEY;
-            const request = await fetch(`${this.baseUrl}?limit=10`,{method:'GET', headers:{
-                'x-api-key': apiKey,
-            },
-        });
+            const request = await fetch(`${this.baseUrl}search?has_breeds=true&limit=10`,{
+                method : 'GET', headers :{ 'x-api-key': apiKey},
+            });
             
             if(!request.ok){
-                throw new Error(`Error: ${response.statusText}`);
+                throw new Error(`Error: ${request.statusText}`);
             }
             console.log(request);
 
@@ -31,7 +30,7 @@ export class DogService {
             .catch((e)=>{
                 console.log(`Error: ${e.message}`);
             });
-            const data = await response.json;
+            const data = await response.json();
             return data;
         }catch (e){
             console.log(`Error:${e.message}`);

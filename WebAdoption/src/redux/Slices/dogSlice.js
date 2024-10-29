@@ -15,7 +15,10 @@ export const dogSlice = createSlice({
             state.dogs = action.payload;
         },
         setDogById(state, action){
-            state.dogs.find(d => d.id === action.payload.id);
+            const dog = state.dogs.find(d => d.id === action.payload.id);
+            if (dog){
+                Object.assign(dog, action.payload);
+            }
         },
         addToAdopted(state, action){
             const dog = state.dogs.find(d => d.id === action.payload.id);

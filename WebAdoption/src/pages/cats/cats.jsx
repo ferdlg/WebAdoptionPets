@@ -21,9 +21,19 @@ const Cats = ()=>{
             }
         };
         fetchCats();
-    },[dispatch])
-    
+    },[dispatch]);
     console.log('cats:',cats)
+
+    const handleSelect = async(catId) =>{
+        try{
+            const dataById = await catService.getCatById(catId);
+            dispatch(setCatById(dataById))
+            console.log('Data By id', dataById)
+        }catch(e){
+            console.error("Error fetching cat by id:", e);
+        }
+    }
+
     return(
         <>
         <div>
@@ -31,6 +41,8 @@ const Cats = ()=>{
                 <Card
                 key={cat.id}
                 imageUrl={cat.url}
+                onOpenModal={()=>handleSelect(cat.id)}
+                dataPet={cat}
                 />
             ))}
         </div>

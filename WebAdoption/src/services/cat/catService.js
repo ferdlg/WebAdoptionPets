@@ -6,7 +6,7 @@ export class CatService{
     async getCats(){
         try{
             const apiKey = import.meta.env.VITE_CAT_API_KEY;
-            const request = await fetch(`${this.baseUrl}?limit=10`,{
+            const request = await fetch(`${this.baseUrl}search?has_breeds=true&limit=10`,{
                 method : 'GET', headers :{ 'x-api-key': apiKey},
             });
 
@@ -28,7 +28,7 @@ export class CatService{
             .catch((e)=>{
                 console.log(`Error: ${e.message}`);
             });
-            const data = await response.json;
+            const data = await response.json();
             return data;
         }catch (e){
             console.log(`Error:${e.message}`);
@@ -37,5 +37,4 @@ export class CatService{
             console.log(`Finalizado`);
         }
     }
-
 }
