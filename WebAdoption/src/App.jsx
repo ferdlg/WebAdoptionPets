@@ -6,17 +6,20 @@ import HowToAdopt from './pages/howToAdopt/howToAdopt.jsx';
 import './assets/styles/base/_app.css';
 import Dogs from './pages/dogs/dogs';
 import Cats from './pages/cats/cats';
+import Layout from "./components/layout.jsx";
 
 
 function App() {
   return (
       <Router>
+        <Layout>
           <Routes>
             <Route path="/" element={<LandingPage />} />
             <Route path="/how-to-adopt" element={<HowToAdopt />} />
             <Route path="/dogs" element={<Dogs/>} />
             <Route path="/cats" element={<Cats/>} />
           </Routes>
+        </Layout>
       </Router>
   );
 }
