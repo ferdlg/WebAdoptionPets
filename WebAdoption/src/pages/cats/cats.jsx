@@ -4,7 +4,6 @@ import { useSelector, useDispatch } from "react-redux";
 import { setCatById, setCats } from "../../redux/Slices/catSlice";
 import Card from "../../components/card";
 
-
 const Cats = ()=>{
 
     const dispatch = useDispatch();

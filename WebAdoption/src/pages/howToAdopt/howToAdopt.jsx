@@ -1,7 +1,6 @@
 import React from 'react';
 import StepCard from "../../components/landingPage/step_card/StepCard.jsx";
 import '../../assets/styles/components/howtoadopt.css';
-
 import awwImage from '../../assets/images/aww.jpg';
 import duoImage from '../../assets/images/duo.jpg';
 import formImage from '../../assets/images/adopta.png';
@@ -22,9 +21,12 @@ const HowToAdopt = () => {
   ];
 
   return (
-    <div className="how-to-adopt">
-      <h1 className="how-to-adopt__title">¿Estás listo para adoptar?</h1>
-      <div className="how-to-adopt__steps">
+    <>
+  
+      <div className="how-to-adopt">
+        <h1 className="how-to-adopt__title">¿Estás listo para adoptar?</h1>
+        <div className="how-to-adopt__steps">
+        
         {steps.map((step, index) => (
           <StepCard 
             key={index} 
@@ -37,7 +39,9 @@ const HowToAdopt = () => {
       
       <video className="mini-video" src={pawVideo} autoPlay loop muted />
     </div>
+    </>
   );
 };
+
 
 export default HowToAdopt;

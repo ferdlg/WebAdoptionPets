@@ -1,14 +1,10 @@
 .card__container  {
-  
-      padding: 2em;
+      padding: 2em; 
       font-style: italic;
-      border: 1px solid #4e4524;
+      border: 3px solid var(--color-sunset-yellow);
       border-radius: 8px;
-      overflow: hidden;
       width: 300px;
-      box-shadow: 0 4px 8px #f8f77a(241, 207, 13);
-      transition: transform 0.2s;
-      background-color: #ebe642;
+      background-color: white;
 }
 
 .card__image {
@@ -18,7 +14,8 @@
   }
 
 .card__content {
-      padding: 16px;
+      background-color:--color-yellow-ligth ;
+      padding: 16px; 
   }
 
 .card__title {
@@ -29,20 +26,10 @@
 .card__description {
       font-style: italic;
       font-size: 1em;
-      color: #e6e261;
+      color: var(--color-sunset-yellow);
       margin-bottom: 16px;
   }
 
-.card__button {
-      font-style: italic;
-      background-color: #452f22;
-      color: #452f22(48, 48, 32);
-      border: none;
-      padding: 10px 16px;
-      cursor: pointer;
-      border-radius: 4px;
-      font-size: 1em;
-  }
 
 
   
