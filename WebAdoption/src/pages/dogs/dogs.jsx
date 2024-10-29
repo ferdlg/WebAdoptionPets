@@ -22,13 +22,10 @@ const Dogs = ()=>{
         fetchDogs();
     },[dispatch]);
 
-    console.log('dogs:',dogs)
-
     const handleSelect = async(dogId) =>{
         try{
             const dataById = await dogService.getDogById(dogId);
             dispatch(setDogById(dataById));
-            console.log('DataById',dataById);
         }catch(e){
             console.error("Error fetching dog by id:", e);
         }
@@ -36,7 +33,7 @@ const Dogs = ()=>{
     }
     return(
         <>
-        <div>
+        <div className="page__dogs">
             {dogs.map(dog =>(
                 <Card
                 key={dog.id}

@@ -22,13 +22,11 @@ const Cats = ()=>{
         };
         fetchCats();
     },[dispatch]);
-    console.log('cats:',cats)
 
     const handleSelect = async(catId) =>{
         try{
             const dataById = await catService.getCatById(catId);
             dispatch(setCatById(dataById))
-            console.log('Data By id', dataById)
         }catch(e){
             console.error("Error fetching cat by id:", e);
         }
@@ -36,7 +34,7 @@ const Cats = ()=>{
 
     return(
         <>
-        <div>
+        <div className="page__cats">
             {cats.map(cat =>(
                 <Card
                 key={cat.id}

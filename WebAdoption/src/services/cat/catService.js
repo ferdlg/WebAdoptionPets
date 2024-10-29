@@ -16,7 +16,7 @@ export class CatService{
             console.log(request);
 
             const data = await  request.json();
-            console.log('Data: ',data);
+            console.log('Data cats: ',data);
             return data;
     } catch(e){
         throw new Error(`Status Code ${e}`);

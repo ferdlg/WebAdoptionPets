@@ -16,7 +16,7 @@ export class DogService {
             console.log(request);
 
             const data = await  request.json();
-            console.log('Data: ',data);
+            console.log('Data dogs: ',data);
             return data;
             
         } catch(e){
