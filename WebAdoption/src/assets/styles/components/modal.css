@@ -1,11 +1,11 @@
 /* modal.css */
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
 .modal__overlay {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
+  inset: 0; /* Simplifica top, left, right, bottom */
+  background: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,15 +13,16 @@
 }
 
 .modal__container {
-      padding: 2em;
-      font-style: italic;
-      border: 1px solid #4e4524;
-      border-radius: 8px;
-      overflow: hidden;
-      width: 300px;
-      box-shadow: 0 4px 8px #eeee76(241, 207, 13);
-      transition: transform 0.2s;
-      background-color: #e7e370;
+  padding: 2em;
+  font-style: italic;
+  border: 3px solid var(--color-sunset-yellow);
+  border-radius: 8px;
+  width: 300px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(241, 207, 13, 0.5);
+  display: flex;
+  flex-direction: column; /* Mejora la organización interna */
+  transition: transform 0.2s ease-in-out;
 }
 
 .modal__pet-name h3 {
@@ -33,12 +34,43 @@
   margin: 0.5em 0;
 }
 
+.modal-container-button {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%; 
+  background-color: white;
+  padding: 10px;
+  margin-top: 1em; 
+  border-radius: 4px;
+
+}
+
 .modal__close {
+  font-family: var(--font-family);
   margin-top: 10px;
   background-color: #e74c3c;
-  color: white;
-  border: none;
+  color: --color-coffe-dark;
+  border: 1px solid var(--color-coffe-dark);
   padding: 10px;
   border-radius: 4px;
   cursor: pointer;
+  transition: background-color 0.2s ease;
 }
+
+.modal__adoption {
+  font-family: var(--font-family);
+  margin-top: 10px;
+  background-color: rgb(83, 192, 251);
+  color: --color-coffe-dark;
+  border: 1px solid var(--color-coffe-dark);
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.modal__close:hover {
+  background-color: darken(var(--close-btn-bg), 10%);
+}
+

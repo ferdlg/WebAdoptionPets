@@ -1,19 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 .button__element {
+    font-family:'DynaPuff', system-ui,'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
       font-style: italic;
-      padding: 10px 20px;
-      background-color: var(--color-sunset-yellow);
-      color: #fff;
-      border: none;
+      padding: 20px 70px; 
+      background-color: var(--color-sunset-yellow) ;
+      color: var(--color-coffe-dark);
+      border: 1px solid var(--color-coffe-dark);
       border-radius: 5px;
       cursor: pointer;
       font-size: 16px;
   }
 
-.button__withIcon {
-  background-image: url('WebAdoption/src/assets/image/huella.png');
-  background-repeat: no-repeat;
-  background-position: left center;
-  padding-left: 30px;
-}
 
   

@@ -28,9 +28,14 @@ const Modal = ({ onClose }) => {
           <p>{origin}</p>
           <p>{lifeSpan}</p>
           <p>{moreInfo}</p>
+          <div className="modal-container-button">
           <button onClick={handleClose} className="modal__close">
             Cerrar
           </button>
+          <button onClick={handleClose} className="modal__adoption">
+            Adoptar
+          </button>
+          </div>
         </div>
       </div>
     </div>
