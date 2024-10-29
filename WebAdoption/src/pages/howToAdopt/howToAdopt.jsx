@@ -1,14 +1,14 @@
 import React from 'react';
-import StepCard from "../components/landingPage/step_card/StepCard.jsx";
-import '../assets/styles/components/howtoadopt.css';
+import StepCard from "../../components/landingPage/step_card/StepCard.jsx";
+import '../../assets/styles/components/howtoadopt.css';
 
-import awwImage from '../assets/images/aww.jpg';
-import duoImage from '../assets/images/duo.jpg';
-import formImage from '../assets/images/adopta.png';
-import respetImage from '../assets/images/respet.png';
-import homeImage from '../assets/images/corazon.webp';
-import perro_y_gato from '../assets/images/perro-y-gato.jpg';
-import pawVideo from '../assets/video/ubication.mp4';
+import awwImage from '../../assets/images/aww.jpg';
+import duoImage from '../../assets/images/duo.jpg';
+import formImage from '../../assets/images/adopta.png';
+import respetImage from '../../assets/images/respet.png';
+import homeImage from '../../assets/images/corazon.webp';
+import perro_y_gato from '../../assets/images/perro-y-gato.jpg';
+import pawVideo from '../../assets/video/ubication.mp4';
 
 const HowToAdopt = () => {
 
