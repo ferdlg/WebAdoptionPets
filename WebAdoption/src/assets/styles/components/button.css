@@ -1,7 +1,7 @@
 .button__element {
       font-style: italic;
       padding: 10px 20px;
-      background-color: #6a4a37;
+      background-color: var(--color-sunset-yellow);
       color: #fff;
       border: none;
       border-radius: 5px;
@@ -15,7 +15,5 @@
   background-position: left center;
   padding-left: 30px;
 }
-
-
 
   
