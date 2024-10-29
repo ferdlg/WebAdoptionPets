@@ -1,3 +1,10 @@
+
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import LandingPage from "./pages/LandingPage";
+import HowToAdopt from './pages/howToAdopt.jsx';
+import './assets/styles/base/_app.css';
+
 import Card from './components/card'
 import Dogs from './pages/dogs/dogs';
 import Cats from './pages/cats/cats';
@@ -7,11 +14,13 @@ import Modal from './components/modal'
 
 function App() {
   return (
-    <div>
-      <Dogs></Dogs>
-      <Cats></Cats>
-    </div>
-  )
-};
+      <Router>
+          <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/how-to-adopt" element={<HowToAdopt />} />
+        </Routes>
+        </Router>
+  );
+}
 
 export default App;

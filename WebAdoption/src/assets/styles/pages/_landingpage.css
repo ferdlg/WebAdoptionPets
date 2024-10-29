@@ -1,0 +1,82 @@
+/* Estilos para el contenedor principal */
+.landing-container {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+/* Encabezado */
+.landing-header {
+  background-color: #f0a500;
+  padding: 20px;
+  text-align: center;
+}
+
+.landing-header h1 {
+  color: #6b4226;
+  font-size: 2.5em;
+}
+
+.landing-header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.landing-header nav ul li {
+  display: inline;
+}
+
+.landing-header nav ul li a {
+  text-decoration: none;
+  color: #eee3e3;
+  font-weight: bold;
+  padding: 10px 20px;
+  background-color: #6b4226;
+  border-radius: 5px;
+}
+
+.landing-header nav ul li a:hover {
+  background-color: #333;
+}
+
+/* Sección de animales destacados */
+.featured-animal {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.featured-animal img {
+  width: 60%;
+  border-radius: 15px;
+}
+
+.featured-animal h2 {
+  color: #f0a500;
+  font-size: 2em;
+  margin-top: 15px;
+}
+
+.adoptable-animals {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #f0a500;
+}
+
+.animal-card {
+  text-align: center;
+}
+
+.animal-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.animal-card p {
+  color: #d3c7c7;
+  font-size: 1.2em;
+}
