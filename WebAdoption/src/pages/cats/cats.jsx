@@ -20,16 +20,26 @@ const Cats = ()=>{
             }
         };
         fetchCats();
-    },[dispatch])
-    
-    console.log('cats:',cats)
+    },[dispatch]);
+
+    const handleSelect = async(catId) =>{
+        try{
+            const dataById = await catService.getCatById(catId);
+            dispatch(setCatById(dataById))
+        }catch(e){
+            console.error("Error fetching cat by id:", e);
+        }
+    }
+
     return(
         <>
-        <div>
+        <div className="page__cats">
             {cats.map(cat =>(
                 <Card
                 key={cat.id}
                 imageUrl={cat.url}
+                onOpenModal={()=>handleSelect(cat.id)}
+                dataPet={cat}
                 />
             ))}
         </div>

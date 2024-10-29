@@ -1,34 +1,25 @@
 import "../assets/styles/components/modal.css";
-
-// Modal.js
 import React from "react";
-import "../assets/styles/components/modal.css";
 
-const Modal = ({ onClose }) => {
+const Modal = ({ onClose, dataPet }) => {
   const handleClose = () => {
     console.log("Cerrar modal");
     onClose();
   };
-  const name = "Gatito";
-  const breeds = "Gatito";
-  const temperament = "Gatito";
-  const origin = "Gatito";
-  const lifeSpan = "Gatito";
-  const moreInfo = "Gatito";
+  console.log('Data Pet',dataPet)
+  const breed = dataPet.breeds && dataPet.breeds.length > 0 ? dataPet.breeds[0] : null;
 
   return (
-    <div className="modal__overlay" onClick={onClose}>
+    <div className="modal__overlay" onClick={handleClose}>
       <div className="modal__container" onClick={(e) => e.stopPropagation()}>
         <div className="modal__pet-name">
-          <h3>{name}</h3>
+          <h3>{breed ? breed.name : 'Nombre no disponible'}</h3>
         </div>
         <div className="modal__pet-info">
-          <p>{breeds}</p>
-          <p>{temperament}</p>
-          <p>{origin}</p>
-          <p>{lifeSpan}</p>
-          <p>{moreInfo}</p>
-          <div className="modal-container-button">
+          <p>{breed ? breed.temperament : 'Temperamento no disponible'}</p>
+          <p>{breed ? breed.origin : 'Origen no disponible'}</p>
+          <p>{breed ? breed.life_span : 'Esperanza de vida no disponible'}</p>
+          <p>{breed ? breed.wikipedia_url : 'URL de Wikipedia no disponible'}</p>
           <button onClick={handleClose} className="modal__close">
             Cerrar
           </button>
@@ -38,10 +29,7 @@ const Modal = ({ onClose }) => {
           </div>
         </div>
       </div>
-    </div>
   );
 };
 
 export default Modal;
-
-

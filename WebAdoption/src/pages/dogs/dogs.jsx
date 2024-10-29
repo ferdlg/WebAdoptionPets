@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { DogService } from "../../services/dog/dogService";
 import { useSelector, useDispatch } from "react-redux";
 import { setDogById, setDogs } from "../../redux/Slices/dogSlice";
@@ -19,16 +19,27 @@ const Dogs = ()=>{
             }
         };
         fetchDogs();
-    },[dispatch])
-    
-    console.log('dogs:',dogs)
+    },[dispatch]);
+
+    const handleSelect = async(dogId) =>{
+        try{
+            const dataById = await dogService.getDogById(dogId);
+            dispatch(setDogById(dataById));
+        }catch(e){
+            console.error("Error fetching dog by id:", e);
+        }
+        
+    }
     return(
         <>
-            <div>
+        <div className="page__dogs">
             {dogs.map(dog =>(
                 <Card
                 key={dog.id}
-                imageUrl={dog.url}/>
+                imageUrl={dog.url}
+                onOpenModal={()=>handleSelect(dog.id)}
+                dataPet={dog}
+                />
             ))}
         </div>
         </>
