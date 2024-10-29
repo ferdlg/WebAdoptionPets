@@ -1,10 +1,9 @@
-import React, {useState} from "react";
-import "../assets/styles/components/card.css"
+import React, { useState } from "react";
+import "../assets/styles/components/card.css";
 import Modal from "./modal";
 import Button from "./button";
-import "../assets/image/huella.png"
+
 const Card = ({ title, description, imageUrl, buttonLabel }) => {
- 
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleOpenModal = () => {
@@ -14,18 +13,20 @@ const Card = ({ title, description, imageUrl, buttonLabel }) => {
   const handleCloseModal = () => {
     setIsModalOpen(false);
   };
+
   return (
-    <div className="card">
-      <img src={imageUrl} alt={title} className="card-image" />
-      <div className="card-content">
-        <h2 className="card-title">{title}</h2>
-        <p className="card-description">{description}</p>
-        <Button className="card-button" label={buttonLabel}  onClick={handleOpenModal}/>
-        </div>
-      {isModalOpen && <Modal onClose ={handleCloseModal} />}
+    <div className="card__container">
+      <img src={imageUrl} alt={title} className="card__image" />
+      <div className="card__content">
+        <h2 className="card__title">{title}</h2>
+        <p className="card__description">{description}</p>
+        <Button className="card__button" label={buttonLabel} onClick={handleOpenModal} />
       </div>
-    
+      {isModalOpen && <Modal onClose={handleCloseModal} />}
+    </div>
   );
 };
 
 export default Card;
+
+

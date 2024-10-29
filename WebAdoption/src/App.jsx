@@ -1,23 +1,19 @@
-import Card from './components/card'
-import './App.css'
-import Modal from './components/modal'
+import Card from './components/card';
+import './App.css';
 
 
 function App() {
- 
   return (
-    <>
     <div>
       <Card
-        title="Tarjeta de adopcion a mascota"
+        title="Tarjeta de adopción a mascota"
         description=""
         imageUrl=""
-        buttonLabel="Descripcion mascota"
-        onClick={Modal}
+        buttonLabel="Descripción mascota"
       />
+      
     </div>
-    </>
-  )
+  );
 }
 
-export default App
+export default App;

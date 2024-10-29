@@ -1,6 +1,14 @@
 import "../assets/styles/components/modal.css";
 
+// Modal.js
+import React from "react";
+import "../assets/styles/components/modal.css";
+
 const Modal = ({ onClose }) => {
+  const handleClose = () => {
+    console.log("Cerrar modal");
+    onClose();
+  };
   const name = "Gatito";
   const breeds = "Gatito";
   const temperament = "Gatito";
@@ -9,18 +17,18 @@ const Modal = ({ onClose }) => {
   const moreInfo = "Gatito";
 
   return (
-    <div className="modal-overlay" onClick={onClose}>
-      <div className="containt__modal" onClick={(e) => e.stopPropagation()}>
-        <div className="containt__modal-pet-name">
+    <div className="modal__overlay" onClick={onClose}>
+      <div className="modal__container" onClick={(e) => e.stopPropagation()}>
+        <div className="modal__pet-name">
           <h3>{name}</h3>
         </div>
-        <div className="containt__modal-pet-info">
+        <div className="modal__pet-info">
           <p>{breeds}</p>
           <p>{temperament}</p>
           <p>{origin}</p>
           <p>{lifeSpan}</p>
           <p>{moreInfo}</p>
-          <button onClick={onClose} className="close-modal">
+          <button onClick={handleClose} className="modal__close">
             Cerrar
           </button>
         </div>
@@ -30,3 +38,5 @@ const Modal = ({ onClose }) => {
 };
 
 export default Modal;
+
+
