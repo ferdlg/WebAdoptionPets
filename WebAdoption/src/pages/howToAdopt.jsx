@@ -1,18 +1,16 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 import StepCard from "../components/landingPage/step_card/StepCard.jsx";
 import '../assets/styles/components/howtoadopt.css';
 
-import awwImage from '../assets/imagenes/aww.jpg';
-import duoImage from '../assets/imagenes/duo.jpg';
-import formImage from '../assets/imagenes/adopta.png';
-import respetImage from '../assets/imagenes/respet.png';
-import homeImage from '../assets/imagenes/corazon.webp';
-import perro_y_gato from '../assets/imagenes/perro-y-gato.jpg';
+import awwImage from '../assets/images/aww.jpg';
+import duoImage from '../assets/images/duo.jpg';
+import formImage from '../assets/images/adopta.png';
+import respetImage from '../assets/images/respet.png';
+import homeImage from '../assets/images/corazon.webp';
+import perro_y_gato from '../assets/images/perro-y-gato.jpg';
 import pawVideo from '../assets/video/ubication.mp4';
 
 const HowToAdopt = () => {
-  const navigate = useNavigate();
 
   const steps = [
     { image: awwImage, text: 'Encuentra un animal que te interese' },
@@ -25,9 +23,6 @@ const HowToAdopt = () => {
 
   return (
     <div className="how-to-adopt">
-      <button onClick={() => navigate('/')} className="how-to-adopt__back-button">
-        ⬅ Volver a la página principal
-      </button>
       <h1 className="how-to-adopt__title">¿Estás listo para adoptar?</h1>
       <div className="how-to-adopt__steps">
         {steps.map((step, index) => (
