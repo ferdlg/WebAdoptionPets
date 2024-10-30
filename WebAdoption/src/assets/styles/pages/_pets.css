@@ -1,0 +1,13 @@
+.page__dogs{
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap; /* Si quieres que se ajusten a la siguiente línea si no hay espacio */
+    gap: 16px; /* Espaciado entre las tarjetas */
+}
+
+.page__cats{
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap; /* Si quieres que se ajusten a la siguiente línea si no hay espacio */
+    gap: 16px; /* Espaciado entre las tarjetas */
+}

@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root{
+    --color-sunset-yellow:#F8BC2F;
+    --color-yellow-ligth:#f7dc6f;
+    --color-mint-cream:#CBF3F0;
+    --color-turquoise-green:#2EC4B6;
+    --color-coffee-ligth:#5A4539;
+    --color-coffe-dark:#2d231d;
+
+    font-family:'DynaPuff', system-ui,'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
