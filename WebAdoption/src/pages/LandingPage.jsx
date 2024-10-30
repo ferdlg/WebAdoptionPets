@@ -6,7 +6,7 @@ import bella from '../assets/images/bella.jpg';
 import banner from '../assets/images/banner.png';
 import '../assets/styles/pages/_landingpage.css';
 import '../assets/styles/components/navBar.css';
-import '../assets/styles/components/howToAdopt.css';
+import "../assets/styles/components/_howToAdopt.css";
 import '../assets/styles/components/stepCard.css';
 import NavBar from '../components/landingPage/navBar/navBar';
 import HowToAdopt from "./howToAdopt.jsx";

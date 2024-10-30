@@ -1,0 +1,22 @@
+.about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .about-us__image {
+    width: 199%; /* Ajusta este valor según el tamaño deseado */
+    max-width: 800px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .about-us__text {
+    font-size: 1.2rem;
+    max-width: 800px;
+    line-height: 1.5;
+    color: #bc7d17;
+  }
+  

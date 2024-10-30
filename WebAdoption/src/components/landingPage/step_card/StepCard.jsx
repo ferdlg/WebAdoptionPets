@@ -8,6 +8,7 @@ const StepCard = ({ image, text, stepNumber }) => {
       <img src={image} alt={text} className="step-card__image" />
       <p className="step-card__text">{text}</p>
     </div>
+    
   );
 };
 

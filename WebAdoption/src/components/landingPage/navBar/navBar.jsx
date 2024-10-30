@@ -10,6 +10,7 @@ const NavBar = () => {
         <li className="nav-bar__item"><Link to="/how-to-adopt" className="nav-bar__link">¿Cómo Adoptar?</Link></li>
         <li className="nav-bar__item"><a href="#dogs" className="nav-bar__link">Perros</a></li>
         <li className="nav-bar__item"><a href="#cats" className="nav-bar__link">Gatos</a></li>
+        <li className="nav-bar__item"><Link to="/about_us" className="nav-bar__link"> Quienes Somos?</Link></li> 
       </ul>
     </nav>
   );
