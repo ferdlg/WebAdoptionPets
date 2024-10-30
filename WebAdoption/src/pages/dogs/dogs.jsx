@@ -3,6 +3,8 @@ import { DogService } from "../../services/dog/dogService";
 import { useSelector, useDispatch } from "react-redux";
 import { setDogById, setDogs } from "../../redux/Slices/dogSlice";
 import Card from "../../components/card";
+import '../../assets/styles/pages/_pets.css'; 
+
 const Dogs = ()=>{
 
     const dispatch = useDispatch();

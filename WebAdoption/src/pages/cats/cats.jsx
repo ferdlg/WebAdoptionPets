@@ -3,6 +3,7 @@ import { CatService } from "../../services/cat/catService";
 import { useSelector, useDispatch } from "react-redux";
 import { setCatById, setCats } from "../../redux/Slices/catSlice";
 import Card from "../../components/card";
+import '../../assets/styles/pages/_pets.css'; 
 
 const Cats = ()=>{
 
