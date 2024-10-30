@@ -17,14 +17,9 @@ export const catSlice = createSlice({
         setCatById(state, action){
             state.cats.find(d => d.id === action.payload.id);
         },
-        addToAdopted(state, action){
-            const cat = state.cats.find(d => d.id === action.payload.id);
-            if(cat){
-                cat.adopted = !cat.adopted;
-            }
-        },
+        
     },
 });
 
-export const {setCats, setCatById, addToAdopted} = catSlice.actions;
+export const {setCats, setCatById} = catSlice.actions;
 export default catSlice.reducer;

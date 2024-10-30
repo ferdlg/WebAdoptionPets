@@ -8,7 +8,9 @@ const Layout = ({children})=>{
         <div className="layout">
             <NavBar/>
             <Banner imageUrl={banner}/>
-            <main>{children}</main>
+            <main>
+                {children}
+            </main>
         </div>
         </>
     )
