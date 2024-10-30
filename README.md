@@ -8,11 +8,15 @@
     <li>React + Vite</li>
     <li>Implementación de Redux</li>
     <li>Canva</li>
-    <li>React + Vite</li>
+    <li>Scrum</li>
   </ol>
   <h3>Hecha un vistazo! 👀</h3>
-  *insertar imagenes del resultado*
-
-  <h2>Adopta!🐾💛</h2>
+<ol>
+    <li>📥 Clona el proyecto copiando la URL.</li>
+    <li>💻 Abre tu terminal y ejecuta <code>npm i</code> para instalar las dependencias.</li>
+    <li>⚡ Corre la app usando el comando <code>npm run dev</code>.</li>
+    <li>🔗 Da clic en el enlace que te aparece en la consola y ¡listo!</li>
+</ol>
+  <h2>No compres, Adopta!🐾💛</h2>
 </div>
 
