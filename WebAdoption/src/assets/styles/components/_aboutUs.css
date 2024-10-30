@@ -7,7 +7,7 @@
   }
   
   .about-us__image {
-    width: 199%; /* Ajusta este valor según el tamaño deseado */
+    width: 199%; 
     max-width: 800px;
     height: auto;
     margin-bottom: 20px;
