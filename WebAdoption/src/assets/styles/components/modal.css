@@ -1,0 +1,44 @@
+/* modal.css */
+.modal__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal__container {
+      padding: 2em;
+      font-style: italic;
+      border: 1px solid #4e4524;
+      border-radius: 8px;
+      overflow: hidden;
+      width: 300px;
+      box-shadow: 0 4px 8px #eeee76(241, 207, 13);
+      transition: transform 0.2s;
+      background-color: #e7e370;
+}
+
+.modal__pet-name h3 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.modal__pet-info p {
+  margin: 0.5em 0;
+}
+
+.modal__close {
+  margin-top: 10px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}

@@ -1,0 +1,11 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+  min-width: 100%;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+}
