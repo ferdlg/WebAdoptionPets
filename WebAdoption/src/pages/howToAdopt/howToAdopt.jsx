@@ -1,14 +1,19 @@
 import React from 'react';
+<<<<<<< HEAD:WebAdoption/src/pages/howToAdopt.jsx
 import StepCard from "../components/landingPage/step_card/StepCard.jsx";
 import '../assets/styles/components/_howtoadopt.css';
+=======
+import StepCard from "../../components/landingPage/step_card/StepCard.jsx";
+import '../../assets/styles/components/howtoadopt.css';
+>>>>>>> d97510f07cb7eb238a17416b0a1bad38dce09ffc:WebAdoption/src/pages/howToAdopt/howToAdopt.jsx
 
-import awwImage from '../assets/images/aww.jpg';
-import duoImage from '../assets/images/duo.jpg';
-import formImage from '../assets/images/adopta.png';
-import respetImage from '../assets/images/respet.png';
-import homeImage from '../assets/images/corazon.webp';
-import perro_y_gato from '../assets/images/perro-y-gato.jpg';
-import pawVideo from '../assets/video/ubication.mp4';
+import awwImage from '../../assets/images/aww.jpg';
+import duoImage from '../../assets/images/duo.jpg';
+import formImage from '../../assets/images/adopta.png';
+import respetImage from '../../assets/images/respet.png';
+import homeImage from '../../assets/images/corazon.webp';
+import perro_y_gato from '../../assets/images/perro-y-gato.jpg';
+import pawVideo from '../../assets/video/ubication.mp4';
 
 const HowToAdopt = () => {
 
