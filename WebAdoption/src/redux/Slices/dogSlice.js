@@ -20,14 +20,9 @@ export const dogSlice = createSlice({
                 Object.assign(dog, action.payload);
             }
         },
-        addToAdopted(state, action){
-            const dog = state.dogs.find(d => d.id === action.payload.id);
-            if(dog){
-                dog.adopted = !dog.adopted;
-            }
-        },
+
     },
 });
 
-export const {setDogById, setDogs, addToAdopted} = dogSlice.actions;
+export const {setDogById, setDogs} = dogSlice.actions;
 export default dogSlice.reducer;

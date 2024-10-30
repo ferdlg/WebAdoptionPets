@@ -1,0 +1,88 @@
+.cart__overlay{
+    position: fixed;
+    inset: 0; 
+    background: white;
+    display: flex;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart__container{
+    background-color: rgb(220, 219, 219);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 760px;
+}
+.cart__header{
+    background-color: rgb(203, 228, 249);
+    display: flex;
+    padding: 0.5rem;
+    border-radius: 1rem 1rem 0 0;
+
+}
+.cart__header--image--cat{
+    width: 50px;
+    height: 50px;
+}
+.cart__body{
+    overflow-y: auto;
+    padding: 0.5em;
+    height: fit-content;
+    scrollbar-width: thin;
+    scrollbar-color: #a0bace #f4f9fc;
+}
+.cart__body--listpets{
+    list-style: none;
+}
+.cart__body--listpets-pet{
+    background-color: aliceblue;
+    display: flex;
+    margin: 0.5em;
+    flex-direction: row;
+    padding: 1em;
+    height: 10vh;
+    justify-content: space-between;
+}
+.cart__body--listpets-pet img{
+    width: 5em;
+}
+
+
+.cart__footer--actions{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    padding:1em;
+}
+
+.cart__footer--btn-adoption{
+    background-color: rgb(225, 191, 21);
+    border: 2px solid rgb(177, 150, 16);
+    padding: 1rem;
+    margin-bottom: 0.5em;
+    border-radius: 0.5em;
+    
+}
+.cart__footer--btn-continue{
+    background-color: rgb(56, 201, 241);
+    border: 2px solid rgb(63, 161, 197);
+    padding: 1rem;
+    border-radius: 0.5em;
+}
+
+.cart__footer--btn-continue , .cart__footer--btn-adoption{
+    width: 80%;
+}
+@media (min-width:735px){
+    .cart{
+        width: 100%;
+        height: 80vh;
+    }
+}
+@media(max-width:375px){
+
+}

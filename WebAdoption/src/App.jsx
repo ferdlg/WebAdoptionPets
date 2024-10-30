@@ -7,6 +7,7 @@ import './assets/styles/base/_app.css';
 import Dogs from './pages/dogs/dogs';
 import Cats from './pages/cats/cats';
 import Layout from "./components/layout.jsx";
+import Cart from "./components/cart/cart.jsx";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
             <Route path="/how-to-adopt" element={<HowToAdopt />} />
             <Route path="/dogs" element={<Dogs/>} />
             <Route path="/cats" element={<Cats/>} />
+            <Route path="/adoption-list" element={<Cart/>} />
           </Routes>
         </Layout>
       </Router>

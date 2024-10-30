@@ -1,10 +1,7 @@
-/* modal.css */
-@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-
 
 .modal__overlay {
   position: fixed;
-  inset: 0; /* Simplifica top, left, right, bottom */
+  inset: 0; 
   background: white;
   display: flex;
   justify-content: center;
@@ -21,7 +18,7 @@
   background-color: white;
   box-shadow: 0 4px 8px rgba(241, 207, 13, 0.5);
   display: flex;
-  flex-direction: column; /* Mejora la organización interna */
+  flex-direction: column;
   transition: transform 0.2s ease-in-out;
 }
 
