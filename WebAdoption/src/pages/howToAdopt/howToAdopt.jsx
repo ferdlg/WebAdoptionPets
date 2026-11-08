@@ -1,6 +1,6 @@
 import React from 'react';
 import StepCard from "../../components/landingPage/step_card/StepCard.jsx";
-import '../../assets/styles/components/howtoadopt.css';
+import '../../assets/styles/components/howToAdopt.css';
 import awwImage from '../../assets/images/aww.jpg';
 import duoImage from '../../assets/images/duo.jpg';
 import formImage from '../../assets/images/adopta.png';
